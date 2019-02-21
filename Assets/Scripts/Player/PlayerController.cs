@@ -6,7 +6,7 @@ namespace Player
 {
     public class PlayerController:IPlayerController
     {
-        //[Inject]
+        
         private IPlayerService playerService;
        
         private IPlayerModel playerModel;
@@ -16,13 +16,11 @@ namespace Player
 
         public PlayerController(IPlayerService _playerService)
         {
-            playerService = _playerService;
-          
-
-            playerModel = new PlayerModel();
+            playerService = _playerService;          
+           playerModel = new PlayerModel();
            GameObject playerPrefab=playerService.GetInstance();
-            GameObject playerInstance=GameObject.Instantiate(playerPrefab);
-            playerView = playerInstance.GetComponent<PlayerView>();
+           GameObject playerInstance=GameObject.Instantiate(playerPrefab);
+           playerView = playerInstance.GetComponent<PlayerView>();
         }
 
 

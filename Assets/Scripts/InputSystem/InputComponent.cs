@@ -20,7 +20,7 @@ namespace InputSystem
             inputService = _inputService;
             if(inputService!=null)
             {
-                Debug.Log("input service injected for input component");
+                //Debug.Log("input service injected for input component");
             }
             if (_currentInputScheme != null)
             {
@@ -28,12 +28,7 @@ namespace InputSystem
                 moveDownKey = _currentInputScheme.moveDownKey;
                 rotateLeftKey = _currentInputScheme.rotateLeftKey;
                 rotateRightKey = _currentInputScheme.rotateRightKey;
-                Debug.Log("scriptable obj recieved");
-                Debug.Log("move up key"+ moveUpKey.ToString());
-                Debug.Log("move down key"+ moveDownKey.ToString());
-                Debug.Log("left key"+ rotateLeftKey.ToString());
-                Debug.Log("right  key"+ rotateRightKey.ToString());
-                
+                Debug.Log("scriptable obj recieved");               
 
             }
             else

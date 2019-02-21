@@ -16,7 +16,7 @@ namespace InputSystem
             playerService = _playerService;
             if (playerService != null)
             {
-                Debug.Log("Injected player service scheme");
+               // Debug.Log("Injected player service scheme");
             }
         }
 
